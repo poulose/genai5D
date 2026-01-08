@@ -1,0 +1,13 @@
+[project]
+name = "5daygenai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beir>=2.2.0",
+    "faiss-cpu>=1.8.0",
+    "numpy<2",
+    "torch<2.3.0",
+    "vertexai>=1.71.1",
+]

@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+
+# idea - pycharm files ignored
+.idea
+
+## Exceptions for .idea files
+!.idea/codeStyles/
+!.idea/vcs.xml
+!.idea/misc.xml
+!.idea/modules.xml
+!.idea/runConfigurations/
