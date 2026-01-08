@@ -10,5 +10,5 @@ dependencies = [
     "numpy",
     "torch; platform_machine == 'arm64'",
     "faiss-cpu; platform_machine == 'arm64'",
-    "vertexai",
+    "google-cloud-aiplatform[vertexai]>=1.132.0",
 ]

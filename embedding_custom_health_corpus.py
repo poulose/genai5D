@@ -6,6 +6,10 @@ from vertexai.language_models import TextEmbeddingInput, TextEmbeddingModel
 import numpy as np
 import pandas as pd
 import pytrec_eval
+import os
+
+
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
 
 def embed_text(texts, model, task, batch_size=5) :
@@ -40,7 +44,7 @@ index.add(doc_embeddings)
 
 # Additional test generic query
 
-example_embed = embed_text(['Is lactose intolerance genetic?'],
+example_embed = embed_text(['Lactose intolerance curable?'],
 model, 'RETRIEVAL_QUERY')
 s,q = index.search(example_embed,1)
 print(f'Score: {s[0][0]:.2f}, Text: "{docs[q[0][0]]}"')
