@@ -7,7 +7,12 @@ requires-python = ">=3.11"
 dependencies = [
     "beir>=2.2.0",
     "faiss-cpu>=1.8.0",
+    "gensim>=4.4.0",
+    "matplotlib>=3.10.8",
     "numpy<2",
+    "tensorflow>=2.16.2",
     "torch<2.3.0",
     "vertexai>=1.71.1",
 ]
+[tool.uv]
+required-environments = ["sys_platform == 'darwin' and platform_machine == 'x86_64'"]
